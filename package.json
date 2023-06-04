@@ -1,0 +1,33 @@
+{
+  "name": "json-stream-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^3.18.0",
+    "superjson": "^1.12.3",
+    "@trpc/server": "^10.29.0",
+    "@trpc/client": "^10.29.0",
+    "@trpc/next": "^10.29.0",
+    "@trpc/react-query": "^10.29.0",
+    "@tanstack/react-query": "^4.29.12"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "5.1.3"
+  }
+}
