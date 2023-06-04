@@ -5,8 +5,8 @@ export type Link = 'direct' | 'batch' | 'stream'
 
 export default function Switch() {
 	const [linkType, setLinkType] = useState<Link>(() => {
-		globalThis.__link = 'stream'
-		return 'stream'
+		globalThis.__link = 'direct'
+		return 'direct'
 	})
 	const setLink = (link: Link) => {
 		setLinkType(link)
@@ -21,9 +21,9 @@ export default function Switch() {
 	return (
 		<>
 			<div>
-				<button onClick={() => setLink('direct')}>Direct</button>
-				<button onClick={() => setLink('batch')}>Batch</button>
-				<button onClick={() => setLink('stream')}>Stream</button>
+				<button onClick={() => setLink('direct')} style={linkType === 'direct' ? { backgroundColor: 'royalblue', color: 'white' } : undefined}>Direct</button>
+				<button onClick={() => setLink('batch')} style={linkType === 'batch' ? { backgroundColor: 'royalblue', color: 'white' } : undefined}>Batch</button>
+				<button onClick={() => setLink('stream')} style={linkType === 'stream' ? { backgroundColor: 'royalblue', color: 'white' } : undefined}>Stream</button>
 				<p>Link type: {linkType}</p>
 			</div>
 			<div>
